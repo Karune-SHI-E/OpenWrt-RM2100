@@ -23,7 +23,7 @@ on:
 #  watch:
 #    types: started
 
-env:
+env: RM2100
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
