@@ -30,7 +30,7 @@ if [ "$answer" = "2" ]; then
 printf "\033[32mINFO \033[0m 正在提交最新修改到GitHub...\n"
 git add .
 git commit -m "Update posts content"
-git push -f origin  main #2020年10月后github新建仓库默认分支改为main，注意更改
+git push -f origin main #2020年10月后github新建仓库默认分支改为main，注意更改
 printf "\033[32mINFO \033[0m 提交完毕，您的修改已上传至Github！\n"
 sleep 1s
 exec ${HexoPath}/menu.sh
