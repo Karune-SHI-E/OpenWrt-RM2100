@@ -14,7 +14,7 @@
  sed -i 's/OpenWrt/Karune/g' package/base-files/files/bin/config_generate
 
 # 修改版本号
-sed -i "s/OpenWrt /Karune build $(TZ=UTC-8 date "+%Y.%m.%d") @by OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
+sed -i "s/OpenWrt /Karune build $(TZ=UTC-8 date "+%Y.%m.%d") @OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
 
 # 修改默认IP
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
@@ -52,9 +52,6 @@ rm -rf package/lean/luci-theme-netgear
 #sed -i 's/net.netfilter.nf_conntrack_max=.*/net.netfilter.nf_conntrack_max=165535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 #修正连接数（by ベ七秒鱼ベ）
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' package/base-files/files/etc/sysctl.conf
-
-# 修改主机名字，把Xiaomi-AX6修改你喜欢的就行（不能纯数字或者使用中文）
-sed -i '/uci commit system/i\uci set system.@system[0].hostname='Redmi-AC2100'' package/lean/default-settings/files/zzz-default-settings
 
 # 修改默认wifi名称ssid为Karune/Karune_5G
 #5g
