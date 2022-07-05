@@ -20,10 +20,10 @@ sed -i "s/OpenWrt /Karune build $(TZ=UTC-8 date "+%Y.%m.%d") @OpenWrt /g" packag
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 
 # 修改默认wifi名称ssid为Karune
-sed -i 's/ssid=OpenWrt/ssid=Karune/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+#sed -i 's/ssid=OpenWrt/ssid=Karune/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 #wifi password
-sed -i 's/key=miku5201314521/key=gds.2021/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+#sed -i 's/key=miku5201314521/key=gds.2021/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 修改默认主题
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
