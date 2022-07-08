@@ -17,9 +17,6 @@
 #main_bg_5k为2500*2109
 #favicon为128*128
 #------------------------------------------------------------------------------------------------------------------------
-mkdir openwrt/package/lean/luci-theme-argonne/htdocs/luci-static/argonne/background
-#------------------------------------------------------------------------------------------------------------------------
-cp diy/haide.mp4 openwrt/package/lean/luci-theme-argonne/htdocs/luci-static/argonne/background/haide.mp4
-cp diy/banner openwrt/package/base-files/files/etc/banner
+cp background openwrt/package/lean/luci-theme-argonne/htdocs/luci-static/argonne/
 #------------------------------------------------------------------------------------------------------------------------
 #
